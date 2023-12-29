@@ -45,8 +45,7 @@ body.dark-mode {
   width: 100%;
   height: 1px;
   border: 1px solid var(--text);
-  /* margin-top: 20px;
-  margin-bottom: 20px; */
+  margin: 10px 0px;
 }
 
 .description {
@@ -207,11 +206,6 @@ body.dark-mode {
 
 /* Styles for furnitures */
 .furnitures {
-  /* display: flex;
-  justify-content: space-between;
-  flex-wrap: wrap; */
-  /* display: grid;
-  grid-template-columns: auto auto auto; */
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
@@ -248,6 +242,9 @@ body.dark-mode {
   border-top: 2px solid var(--text);
   margin-top: 60px;
   padding: 30px;
+  position: relative;
+  bottom: 0px;
+  width: 100%;
 }
 
 .footer-items {
@@ -286,4 +283,34 @@ body.dark-mode {
 .footer-social img {
   width: 30px;
   height: 30px;
+}
+
+/* Styles for furnitures */
+.furnitures {
+  margin-top: 150px;
+}
+
+.products {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.product {
+  border: 1px solid #fff;
+  width: 300px;
+}
+
+.product-title {
+  font-size: 20px;
+  color: var(--text);
+  margin-bottom: 10px;
+}
+
+.product-information {
+  padding: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-start;
 }
