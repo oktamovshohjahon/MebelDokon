@@ -1,3 +1,5 @@
+import Image from "../../assets/images/mebel.jpg";
+
 function HomeFurniture({ title, image, description, price }) {
   return (
     <div className="furniture">
