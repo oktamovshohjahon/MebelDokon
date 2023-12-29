@@ -69,6 +69,12 @@
   animation: slideIn 1s ease-out;
 }
 
+.main-header-responsive,
+.main-header-responsive-icons,
+.main-header-modes {
+  animation: slideIn 1s ease-out;
+}
+
 /* Styles for hero section */
 .hero-information {
   animation: slideInFromLeft 1s ease-out;

@@ -1,5 +1,6 @@
 import "./App.css";
 import "./assets/animation.css";
+import "./assets/responsive.css";
 
 // react-router-dom
 import { RouterProvider, createBrowserRouter } from "react-router-dom"; // v6...
