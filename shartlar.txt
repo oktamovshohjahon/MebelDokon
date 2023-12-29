@@ -1,0 +1,20 @@
+Aynan sizni tanlashimiz uchun sizga vazifa beriladi.  Kamida uchta Bularga o'zingiz G'oya qilgan holda Frontend qismini qilib bizga tashlab berishiz kerak bunga 1 hafta vaqt beriladi. Agar birinchi loyhangiz bizga maqul bo'lsa faqat bitta vazifa beradi
+
+Bu vazifa sizning rezmeingiz bilan solishtiriladi va uning haqiyqiyligini isbotlashda yordam beradi 
+
+Maqul bo'lsa, 
+
+Birinchi vazifa:  Mebel Sayt bo'ladi.
+
+-  Sayt Korporativ bo'lishi 
+-  Creativeligiga etibor beriladi !
+-  Pagelar soni 5 tadan kam bo'lmasligi
+- (1-page) Asosan informatsion (5-6 bo'limdan iborat bo'lishi)
+- (2-page) Maxsulotni hisoblash ( material turini tanlash va shu asosida narxni hisoblash )
+- (3-page) Mebelchi ustaning ishlarini qo'yib borilishi uchun
+- (4-page) Aloqa uchun qilinadi. (contact qismi)
+- (5 - ... pagelar ) - Bu yog'i sizning izlanishingizga bo'liq
+
+Figmadagi shablonlardan foydalanish mimkin, Ammo Tayyor siteni tashlab o'zizni aldamang
+
+OMAD !!!

@@ -1,0 +1,98 @@
+@keyframes moveUpDown {
+  0%,
+  100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideIn {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(0);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes slideInFromLeft {
+  0% {
+    transform: translateX(-100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes slideInFromRight {
+  0% {
+    transform: translateX(100%);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+/* Styles for header */
+.main-header {
+  animation: slideIn 1s ease-out;
+}
+
+/* Styles for hero section */
+.hero-information {
+  animation: slideInFromLeft 1s ease-out;
+}
+
+.hero-image {
+  animation: slideInFromRight 1s ease-out;
+  text-align: center;
+}
+
+.hero-image img {
+  animation: moveUpDown 1.5s ease-out infinite;
+}
+
+/* Styles for about section */
+.about-image {
+  animation: slideInFromLeft 1s ease-out;
+  text-align: center;
+}
+
+.about-image img {
+  animation: moveUpDown 1.5s ease-out infinite;
+}
+
+.about-information {
+  animation: slideInFromRight 1s ease-out;
+}
