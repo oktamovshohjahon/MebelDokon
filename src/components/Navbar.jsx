@@ -55,7 +55,7 @@ function Navbar() {
           </li>
 
           <li className="main-header-item">
-            <NavLink to="/furnitures">Mebellar</NavLink>
+            <NavLink to="/products">Mebellar</NavLink>
           </li>
           <li className="main-header-item">
             <NavLink to="/contact">Bog'lanish</NavLink>

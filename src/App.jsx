@@ -11,6 +11,7 @@ import Furnitures from "./pages/Furnitures";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
+import ProductLayout from "./layouts/ProductLayout";
 
 function App() {
   const routes = createBrowserRouter([
@@ -24,8 +25,14 @@ function App() {
           element: <Home />,
         },
         {
-          path: "/furnitures",
-          element: <Furnitures />,
+          path: "/products",
+          element: <ProductLayout />,
+          children: [
+            {
+              index: true,
+              element: <Furnitures />,
+            },
+          ],
         },
       ],
     },
