@@ -60,6 +60,11 @@ body.dark-mode {
   display: none;
 }
 
+input:focus,
+textarea:focus {
+  outline: none;
+}
+
 ::-webkit-scrollbar {
   width: 6px;
 }
@@ -434,4 +439,43 @@ body.dark-mode {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+/* Styles for contact */
+.contact {
+  margin-top: 150px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact label {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 30px;
+}
+
+.contact label > span {
+  color: var(--text);
+  font-family: var(--primary-font);
+  letter-spacing: 2px;
+}
+
+.contact label > input,
+.contact label > textarea {
+  border: none;
+  background-color: var(--text);
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 5px;
+  font-family: var(--primary-font);
+  letter-spacing: 1px;
+  font-size: 16px;
+  resize: none;
+}
+
+.contact label > textarea {
+  height: 300px;
 }

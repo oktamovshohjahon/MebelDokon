@@ -9,6 +9,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"; // v6...
 import Home from "./pages/Home";
 import Furnitures from "./pages/Furnitures";
 import FurnitureDetail from "./components/Furnitures/FurnitureDetail";
+import Contact from "./pages/Contact";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -38,6 +39,10 @@ function App() {
               element: <FurnitureDetail />,
             },
           ],
+        },
+        {
+          path: "/contact",
+          element: <Contact />,
         },
       ],
     },
