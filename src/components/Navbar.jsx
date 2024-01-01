@@ -60,12 +60,14 @@ function Navbar() {
           <li className="main-header-item">
             <NavLink to="/contact">Bog'lanish</NavLink>
           </li>
-          <li className="main-header-item">
-            <NavLink to="/login">Kirish</NavLink>
-          </li>
-          <li className="main-header-item">
-            <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
-          </li>
+          <ul className="auth">
+            <li className="main-header-item">
+              <NavLink to="/login">Kirish</NavLink>
+            </li>
+            <li className="main-header-item">
+              <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
+            </li>
+          </ul>
           {/* <li className="main-header-item">
             <NavLink to="/dashboard">Kabinetim</NavLink>
           </li> */}
@@ -104,17 +106,19 @@ function Navbar() {
               <NavLink to="/">Bosh sahifa</NavLink>
             </li>
             <li className="main-header-item">
-              <NavLink to="/shop">Mebellar</NavLink>
+              <NavLink to="/products">Mebellar</NavLink>
             </li>
             <li className="main-header-item">
               <NavLink to="/contact">Bog'lanish</NavLink>
             </li>
-            <li className="main-header-item">
-              <NavLink to="/login">Kirish</NavLink>
-            </li>
-            <li className="main-header-item">
-              <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
-            </li>
+            <ul className="auth">
+              <li className="main-header-item">
+                <NavLink to="/login">Kirish</NavLink>
+              </li>
+              <li className="main-header-item">
+                <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
+              </li>
+            </ul>
             {/* <li className="main-header-item">
             <NavLink to="/dashboard">Kabinetim</NavLink>
           </li> */}
@@ -129,7 +133,7 @@ function Navbar() {
             }
             onClick={() => handleLight()}
           >
-            <img src={Sun} width="50px" height="50px" alt="" />
+            <img src={Sun} width="30px" height="30px" alt="" />
           </li>
           <li
             className={
@@ -137,7 +141,7 @@ function Navbar() {
             }
             onClick={() => handleDark()}
           >
-            <img src={Moon} width="50px" height="50px" alt="" />
+            <img src={Moon} width="30px" height="30px" alt="" />
           </li>
         </ul>
       </div>

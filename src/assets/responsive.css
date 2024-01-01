@@ -49,6 +49,27 @@
   .furniture {
     width: 45%;
   }
+
+  .product-detail {
+    flex-direction: column;
+  }
+
+  .product-detail-information,
+  .product-detail-image {
+    width: 100%;
+  }
+
+  .product-detail-image {
+    text-align: center;
+  }
+
+  .product-detail-information {
+    margin-top: 60px;
+  }
+
+  .product-detail-information .title {
+    text-align: center;
+  }
 }
 
 @media only screen and (max-width: 820px) {
@@ -63,5 +84,12 @@
 
   .furniture {
     width: 100%;
+  }
+}
+
+@media only screen and (max-width: 471px) {
+  .product {
+    margin: 30px 0 !important;
+    margin-left: 0 !important;
   }
 }

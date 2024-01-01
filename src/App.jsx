@@ -8,6 +8,7 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"; // v6...
 // pages
 import Home from "./pages/Home";
 import Furnitures from "./pages/Furnitures";
+import FurnitureDetail from "./components/Furnitures/FurnitureDetail";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
@@ -31,6 +32,10 @@ function App() {
             {
               index: true,
               element: <Furnitures />,
+            },
+            {
+              path: ":id",
+              element: <FurnitureDetail />,
             },
           ],
         },
