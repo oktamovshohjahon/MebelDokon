@@ -8,19 +8,28 @@ import { RouterProvider, createBrowserRouter } from "react-router-dom"; // v6...
 // pages
 import Home from "./pages/Home";
 import Furnitures from "./pages/Furnitures";
-import FurnitureDetail from "./components/Furnitures/FurnitureDetail";
+import FurnitureDetail from "./pages/Furnitures/FurnitureDetail";
 import Contact from "./pages/Contact";
+import Login from "./pages/Login";
+import Register from "./pages/Register";
+import ErrorPage from "./pages/ErrorPage";
+import DashboardWelcome from "./pages/Dashboard/DashboardWelcome";
+import DashboardSettings from "./pages/Dashboard/DashboardSettings";
+import DashboardClients from "./pages/Dashboard/DashboardClients";
+import DashboardAdd from "./pages/Dashboard/DashboardAdd";
+import DashboardBasket from "./pages/Dashboard/DashboardBasket";
 
 // layouts
 import RootLayout from "./layouts/RootLayout";
 import ProductLayout from "./layouts/ProductLayout";
+import DashboarLayout from "./layouts/DashboarLayout";
 
 function App() {
   const routes = createBrowserRouter([
     {
       path: "/",
       element: <RootLayout />,
-      // errorElement: <ErrorPage />,
+      errorElement: <ErrorPage />,
       children: [
         {
           index: true,
@@ -43,6 +52,40 @@ function App() {
         {
           path: "/contact",
           element: <Contact />,
+        },
+        {
+          path: "/login",
+          element: <Login />,
+        },
+        {
+          path: "/register",
+          element: <Register />,
+        },
+        {
+          path: "/dashboard",
+          element: <DashboarLayout />,
+          children: [
+            {
+              index: true,
+              element: <DashboardWelcome />,
+            },
+            {
+              path: "clients",
+              element: <DashboardClients />,
+            },
+            {
+              path: "settings",
+              element: <DashboardSettings />,
+            },
+            {
+              path: "add",
+              element: <DashboardAdd />,
+            },
+            {
+              path: "basket",
+              element: <DashboardBasket />,
+            },
+          ],
         },
       ],
     },

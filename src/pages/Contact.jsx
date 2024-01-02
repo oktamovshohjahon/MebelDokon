@@ -1,10 +1,16 @@
 import { useState } from "react";
 
 function Contact() {
+  // data
   const [firstName, setFirstName] = useState("");
   const [email, setEmail] = useState("");
   const [message, setMessage] = useState("");
   const [submit, setSubmit] = useState(false);
+
+  // err
+  const [firstNameErr, setFirstNameErr] = useState(false);
+  const [emailErr, setEmailErr] = useState(false);
+  const [messageErr, setMessageErr] = useState(false);
 
   return (
     <div className="container">
@@ -22,6 +28,11 @@ function Contact() {
               placeholder="Umar"
               required
             />
+            {firstNameErr ? (
+              <span className="err">Bu qismni to'ldirish shart !</span>
+            ) : (
+              ""
+            )}
           </label>
           <label>
             <span>Emailingizni kiriting</span>
@@ -32,6 +43,14 @@ function Contact() {
               placeholder="umar123@gmail.com"
               required
             />
+            {emailErr ? (
+              <>
+                <span className="err">Bu qismni to'ldirish shart !</span>
+                <span className="err">Iltimos to'gri email kiriting !</span>
+              </>
+            ) : (
+              ""
+            )}
           </label>
           <label>
             <span>Xabaringizni kiriting</span>
@@ -46,14 +65,42 @@ function Contact() {
               placeholder="Mening manashunday taklif yoki savolim bor edi. U mana bunda ..."
             />
             <span>{message.length}/500</span>
+            {messageErr ? (
+              <span className="err">Bu qismni to'ldirish shart !</span>
+            ) : (
+              ""
+            )}
           </label>
           <button
             type="button"
             onClick={() => {
-              setEmail("");
-              setFirstName("");
-              setMessage("");
-              setSubmit(true);
+              if (
+                email &&
+                firstName &&
+                message &&
+                email.includes("@") &&
+                email[email.length - 1] != "@"
+              ) {
+                setEmail("");
+                setFirstName("");
+                setMessage("");
+                setSubmit(true);
+                setEmailErr(false);
+                setFirstNameErr(false);
+                setMessageErr(false);
+              }
+
+              if (!email) {
+                setEmailErr(true);
+              }
+
+              if (!firstName) {
+                setFirstNameErr(true);
+              }
+
+              if (!message) {
+                setMessageErr(true);
+              }
             }}
             className={submit ? "button not-allowed" : "button"}
           >

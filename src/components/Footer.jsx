@@ -15,16 +15,10 @@ function Footer() {
             <NavLink to="/">Bosh sahifa</NavLink>
           </li>
           <li className="footer-item">
-            <NavLink to="/shop">Mebellar</NavLink>
+            <NavLink to="/products">Mebellar</NavLink>
           </li>
           <li className="footer-item">
             <NavLink to="/contact">Bog'lanish</NavLink>
-          </li>
-          <li className="footer-item">
-            <NavLink to="/login">Kirish</NavLink>
-          </li>
-          <li className="footer-item">
-            <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
           </li>
         </ul>
         <ul className="footer-socials">

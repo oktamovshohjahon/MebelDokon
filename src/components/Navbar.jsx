@@ -30,6 +30,14 @@ function Navbar() {
   };
 
   const mode = localStorage.getItem("mode");
+  const localLogin = localStorage.getItem("login");
+  let login;
+
+  if (localLogin == "false") {
+    login = false;
+  } else {
+    login = true;
+  }
 
   if (mode == "light") {
     useEffect(() => {
@@ -46,7 +54,7 @@ function Navbar() {
       <div className="container">
         <div className="main-header-logo">
           <NavLink to="/">
-            <img src={LogoDark} width="100px" height="100px" alt="" />
+            <img src={LogoDark} width="50px" height="50px" alt="" />
           </NavLink>
         </div>
         <ul className="main-header-items">
@@ -60,17 +68,20 @@ function Navbar() {
           <li className="main-header-item">
             <NavLink to="/contact">Bog'lanish</NavLink>
           </li>
-          <ul className="auth">
+          {login ? (
             <li className="main-header-item">
-              <NavLink to="/login">Kirish</NavLink>
+              <NavLink to="/dashboard">Kabinetim</NavLink>
             </li>
-            <li className="main-header-item">
-              <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
-            </li>
-          </ul>
-          {/* <li className="main-header-item">
-            <NavLink to="/dashboard">Kabinetim</NavLink>
-          </li> */}
+          ) : (
+            <ul className="auth">
+              <li className="main-header-item">
+                <NavLink to="/login">Kirish</NavLink>
+              </li>
+              <li className="main-header-item">
+                <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
+              </li>
+            </ul>
+          )}
         </ul>
 
         <ul
@@ -111,17 +122,20 @@ function Navbar() {
             <li className="main-header-item">
               <NavLink to="/contact">Bog'lanish</NavLink>
             </li>
-            <ul className="auth">
+            {login ? (
               <li className="main-header-item">
-                <NavLink to="/login">Kirish</NavLink>
+                <NavLink to="/dashboard">Kabinetim</NavLink>
               </li>
-              <li className="main-header-item">
-                <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
-              </li>
-            </ul>
-            {/* <li className="main-header-item">
-            <NavLink to="/dashboard">Kabinetim</NavLink>
-          </li> */}
+            ) : (
+              <ul className="auth">
+                <li className="main-header-item">
+                  <NavLink to="/login">Kirish</NavLink>
+                </li>
+                <li className="main-header-item">
+                  <NavLink to="/register">Ro'yhatdan o'tish</NavLink>
+                </li>
+              </ul>
+            )}
           </ul>
         ) : (
           <></>

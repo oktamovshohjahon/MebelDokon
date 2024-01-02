@@ -1,5 +1,5 @@
 // components
-import MainFurnitures from "../components/Furnitures/MainFurnitures";
+import MainFurnitures from "./Furnitures/MainFurnitures";
 
 function Furnitures() {
   return (

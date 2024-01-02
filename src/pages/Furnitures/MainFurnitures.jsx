@@ -6,7 +6,7 @@ import { NavLink } from "react-router-dom";
 import { useState } from "react";
 
 // components
-import Loader from "../Loader";
+import Loader from "../../components/Loader";
 
 function MainFurnitures() {
   // fetch

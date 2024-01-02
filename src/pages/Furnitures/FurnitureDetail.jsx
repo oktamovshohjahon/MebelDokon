@@ -4,8 +4,8 @@ import { useFetch } from "../../hooks/useFetch";
 import { useState } from "react";
 
 // components
-import Loader from "../Loader";
-import PageCarousel from "../Carousel";
+import Loader from "../../components/Loader";
+import PageCarousel from "../../components/Carousel";
 
 function FurnitureDetail() {
   // fetch
@@ -108,7 +108,13 @@ function FurnitureDetail() {
       )}
 
       {isPending ? <Loader /> : ""}
-      {error ? <h1 className="title">{error}</h1> : ""}
+      {error ? (
+        <h1 className="title" style={{ marginTop: "150px" }}>
+          {error}
+        </h1>
+      ) : (
+        ""
+      )}
     </div>
   );
 }

@@ -1,8 +1,8 @@
 // components
-import Hero from "../components/Home/Hero";
-import About from "../components/Home/About";
-import Furnitures from "../components/Home/Furnitures";
-import WhyUs from "../components/Home/WhyUs";
+import Hero from "./Home/Hero";
+import About from "./Home/About";
+import Furnitures from "./Home/Furnitures";
+import WhyUs from "./Home/WhyUs";
 
 function Home() {
   return (
