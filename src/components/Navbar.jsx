@@ -35,7 +35,7 @@ function Navbar() {
 
   if (localLogin == "true") {
     login = true;
-  } else if (localLogin == "false") {
+  } else {
     login = false;
   }
 
