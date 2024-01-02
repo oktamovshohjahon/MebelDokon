@@ -13,10 +13,10 @@ function Contact() {
   const localLogin = localStorage.getItem("login");
   let login;
 
-  if (localLogin == "false") {
-    login = false;
-  } else {
+  if (localLogin == "true") {
     login = true;
+  } else {
+    login = false;
   }
 
   return (
